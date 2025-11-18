@@ -3,9 +3,7 @@ const snapshot = document.getElementById('snapshot')
 const stop = document.getElementById('stop')
 const soundClips = document.querySelector(".sound-clips");
 let counter = 0;
-const MIN_DECIBELS = -35;
 let isRecording = false;
-let soundDetected = false;
 let mediaRecorder
 
 // https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API/Using_the_MediaStream_Recording_API
