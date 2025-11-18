@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="hark.bundle.js"></script>
+</head>
+<body>
+  <script type="importmap">
+    {
+      "imports": {
+        "decibel-meter": "https://cdn.jsdelivr.net/npm/decibel-meter@2.0.0/+esm"
+      }
+    }
+  </script>
+  <p id="db-meter"></p>
+  <p id="db-text"></p>
+  <p id="silence-timer"></p>
+  <button id="record">Record</button>
+  <button id="snapshot">Snapshot</button>
+  <button id="stop">Stop</button>
+  <div class="sound-clips"></div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
