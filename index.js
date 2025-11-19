@@ -2,7 +2,7 @@ button.addEventListener('pointerup', function(event) {
   // Call navigator.bluetooth.requestDevice
   navigator.bluetooth.requestDevice({
   filters: [{
-    name: "Celso's MacBook Pro",
+    name: "Celso's MacBook Pro (2)",
     optionalServices: ['generic_access']
   }]
   })
