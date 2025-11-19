@@ -1,3 +1,8 @@
+const btPermission = await navigator.permissions.query({ name: "bluetooth" });
+if (btPermission.state !== "denied") {
+  document.body.insertAdjacentHTML('beforeend', JSON.stringify(btPermission))
+}
+
 const record = document.getElementById('record')
 const snapshot = document.getElementById('snapshot')
 const stop = document.getElementById('stop')
