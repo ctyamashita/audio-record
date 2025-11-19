@@ -1,7 +1,16 @@
-const btPermission = await navigator.permissions.query({ name: "bluetooth" });
-if (btPermission.state !== "denied") {
-  document.body.insertAdjacentHTML('beforeend', JSON.stringify(btPermission))
-}
+button.addEventListener('pointerup', function(event) {
+  // Call navigator.bluetooth.requestDevice
+  navigator.bluetooth.requestDevice({
+  filters: [{
+    name: "Celso's MacBook Pro",
+    optionalServices: ['generic_access']
+  }]
+  })
+  .then(device => { 
+    console.log('Connected to device:', device.name);
+    console.log(device)
+    })
+});
 
 const record = document.getElementById('record')
 const snapshot = document.getElementById('snapshot')
