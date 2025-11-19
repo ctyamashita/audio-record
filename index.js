@@ -1,17 +1,3 @@
-button.addEventListener('pointerup', function(event) {
-  // Call navigator.bluetooth.requestDevice
-  navigator.bluetooth.requestDevice({
-  filters: [{
-    name: "Celso's MacBook Pro (2)",
-    optionalServices: ['generic_access']
-  }]
-  })
-  .then(device => { 
-    console.log('Connected to device:', device.name);
-    console.log(device)
-    })
-});
-
 const record = document.getElementById('record')
 const snapshot = document.getElementById('snapshot')
 const stop = document.getElementById('stop')
